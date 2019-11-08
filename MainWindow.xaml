@@ -1,0 +1,45 @@
+﻿<Window x:Class="Conway_s_Game_of_Life.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Conway_s_Game_of_Life"
+        xmlns:controls="clr-namespace:Conway_s_Game_of_Life.View"
+        mc:Ignorable="d"
+        Title="Game of Death" Height="400" Width="600">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Background" Value="SlateGray"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="LightGray"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="playspace" Width="9*"/>
+            <ColumnDefinition x:Name="slider" Width=".4*"/>
+            <ColumnDefinition x:Name="controls" Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="1"/>
+        <Label Grid.Column="2"/>
+        <UniformGrid x:Name="gameGrid" 
+                         Grid.Column="0"
+                         DataContext="Control.SimulationBoard">
+        </UniformGrid>
+        <UniformGrid x:Name="controlPanel" Grid.Column="2" Rows="7">
+            <controls:DisplaySlider x:Name="gridWidthSlider"/>
+            <controls:DisplaySlider x:Name="gridHeightSlider"/>
+            <Button Content="Update Grid"
+                    x:Name="updateButton" Click="updateButton_Click"/>
+            <Button Content="Randomize Cells"
+                    x:Name="randomizerButton" Click="randomizerButton_Click"/>
+            <Button Content="Generation Step"
+                    x:Name="stepButton" Click="stepButton_Click"/>
+            <controls:DisplaySlider x:Name="ticksPerSecondSlider"/>
+            <Button x:Name="startStopButton"
+                    Content="Start"
+                    Background="Green" Click="startStopButton_Click"/>
+        </UniformGrid>
+    </Grid>
+</Window>

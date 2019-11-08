@@ -1,0 +1,8 @@
+C:\Users\royal\OneDrive\VisualStudioWorkspace\Conway's Game of Life\Conway's Game of Life\obj\Debug\Conway's Game of Life.csprojResolveAssemblyReference.cache
+C:\Users\royal\OneDrive\VisualStudioWorkspace\Conway's Game of Life\Conway's Game of Life\obj\Debug\MainWindow.g.cs
+C:\Users\royal\OneDrive\VisualStudioWorkspace\Conway's Game of Life\Conway's Game of Life\obj\Debug\View\DisplaySlider.g.cs
+C:\Users\royal\OneDrive\VisualStudioWorkspace\Conway's Game of Life\Conway's Game of Life\obj\Debug\App.g.cs
+C:\Users\royal\OneDrive\VisualStudioWorkspace\Conway's Game of Life\Conway's Game of Life\obj\Debug\Conway's Game of Life_MarkupCompile.cache
+C:\Users\royal\OneDrive\VisualStudioWorkspace\Conway's Game of Life\Conway's Game of Life\obj\Debug\Conway's Game of Life_MarkupCompile.lref
+C:\Users\royal\OneDrive\VisualStudioWorkspace\Conway's Game of Life\Conway's Game of Life\obj\Debug\Conway's Game of Life.exe
+C:\Users\royal\OneDrive\VisualStudioWorkspace\Conway's Game of Life\Conway's Game of Life\obj\Debug\Conway's Game of Life.pdb
